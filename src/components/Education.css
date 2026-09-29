@@ -1,0 +1,6 @@
+.education { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: grid; gap: 4px; align-content: start; }
+.card h3 { font-size: 1.2rem; }
+.card p { color: var(--slate); }
+.card h3:not(:first-child) { margin-top: 16px; }
+@media (max-width: 800px) { .education { grid-template-columns: 1fr; } }

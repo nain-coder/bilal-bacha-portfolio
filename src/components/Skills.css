@@ -1,0 +1,6 @@
+.skills__tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.skills__tab { font: inherit; font-weight: 600; padding: 8px 16px; border-radius: 99px; border: 1.5px solid var(--line); background: var(--card); color: var(--slate); cursor: pointer; }
+.skills__tab[aria-pressed="true"] { background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
+.skills__chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.skills__chip { padding: 8px 14px; border-radius: 8px; background: var(--card); border: 1px solid var(--line); animation: pop 0.35s both; }
+@keyframes pop { from { opacity: 0; transform: translateY(8px) scale(0.96); } }

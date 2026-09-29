@@ -1,0 +1,56 @@
+export const experience = [
+  {
+    id: "freelance",
+    role: "Software Engineer",
+    org: "Freelance",
+    place: "Self-employed",
+    period: "09/2025 – Present",
+    points: [
+      "Client projects for startups, including Kodera Consulting and Otubucks (UAE).",
+      "Built responsive websites and admin panels in React with reusable components.",
+      "Designed Node.js REST APIs serving web, iOS and Android apps.",
+      "Cut load time for Otubucks by optimizing the webpack build.",
+      "Deployed on AWS Lightsail, monitored uptime and fixed production issues.",
+    ],
+  },
+  {
+    id: "convera",
+    role: "Front End Developer",
+    org: "Convera",
+    place: "United States",
+    period: "04/2025 – 07/2025",
+    points: [
+      "Built a payment gateway micro UI from scratch in React, embedded by business clients so customers can pay fees or pay through their Convera account.",
+      "Maintained and improved an AngularJS application with QA.",
+      "Shipped secure, responsive interfaces for financial transactions in a regulated fintech setting.",
+      "Worked with designers, product owners, architects and scrum masters.",
+    ],
+  },
+  {
+    id: "sigma",
+    role: "Front End Developer",
+    org: "Sigma Digital Solutions",
+    place: "Islamabad, Pakistan",
+    period: "05/2023 – 04/2025",
+    points: [
+      "Built seadubai.com with React and Material UI on a Node.js back end. Live in production.",
+      "Built the Vue Storefront e-commerce front end for bedquarter, connected to Magento.",
+      "Built the Vue.js front end for lafonda on a PHP back end.",
+      "Developed Angular apps with Angular Material and NgRx.",
+      "Delivered responsive, accessible (WCAG) interfaces, using Redux and Context API in React.",
+    ],
+  },
+  {
+    id: "genesis",
+    role: "Front End Developer",
+    org: "Genesis Engineering",
+    place: "Islamabad, Pakistan",
+    period: "12/2022 – 12/2023",
+    points: [
+      "Built Angular apps from scratch for US clients with TypeScript, SCSS, Tailwind and Bootstrap.",
+      "Migrated legacy static sites to Angular for better performance and maintainability.",
+      "Ran QA testing to improve accessibility and usability.",
+      "Worked directly with US clients across time zones.",
+    ],
+  },
+];

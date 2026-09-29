@@ -1,0 +1,9 @@
+.contact__box { background: var(--ink); color: #fff; border-radius: 24px; padding: clamp(28px, 6vw, 56px); position: relative; overflow: hidden; }
+.contact__box::after { content: ""; position: absolute; width: 320px; height: 320px; right: -80px; top: -80px; border-radius: 50%; background: var(--cobalt); filter: blur(80px); opacity: 0.5; animation: drift 10s ease-in-out infinite alternate; }
+.contact__box > * { position: relative; z-index: 1; }
+.contact__text { max-width: 52ch; color: #c9d2ee; margin-bottom: 22px; font-size: 1.1rem; }
+.contact__email { display: inline-block; font: 800 clamp(1.4rem, 4vw, 2.6rem) / 1.1 var(--font-display); text-decoration: underline; text-decoration-color: var(--mint); text-underline-offset: 8px; word-break: break-all; }
+.contact__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.contact__box .btn { border-color: #fff; }
+.contact__box .btn--primary { background: #fff; color: var(--ink); }
+.contact__details { margin-top: 20px; color: #9fb0d8; }

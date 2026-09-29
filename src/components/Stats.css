@@ -1,0 +1,6 @@
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 56px 0 8px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; transition: transform 0.25s, box-shadow 0.25s; }
+.stat:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(20,33,61,0.1); }
+.stat__value { font: 800 clamp(2.2rem, 5vw, 3.2rem) / 1 var(--font-display); color: var(--cobalt); }
+.stat__label { color: var(--slate); margin-top: 8px; }
+@media (max-width: 800px) { .stats { grid-template-columns: repeat(2, 1fr); } }

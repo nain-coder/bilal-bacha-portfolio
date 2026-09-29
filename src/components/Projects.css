@@ -1,0 +1,13 @@
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.project { position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 28px; display: grid; gap: 8px; align-content: start; }
+.project:first-child { grid-column: 1 / -1; background: var(--ink); color: #fff; }
+.project::before { content: ""; position: absolute; inset: 0; opacity: 0; transition: opacity 0.3s; background: radial-gradient(320px circle at var(--x, 50%) var(--y, 50%), rgba(47,91,255,0.16), transparent 70%); }
+.project:first-child::before { background: radial-gradient(360px circle at var(--x, 50%) var(--y, 50%), rgba(191,235,212,0.22), transparent 70%); }
+.project:hover::before { opacity: 1; }
+.project.is-in:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(20,33,61,0.14); }
+.project__name { font-size: 1.4rem; position: relative; }
+.project__stack { color: var(--cobalt); font-weight: 600; position: relative; }
+.project__detail { color: var(--slate); position: relative; }
+.project:first-child .project__stack { color: var(--mint); }
+.project:first-child .project__detail { color: #c9d2ee; }
+@media (max-width: 800px) { .projects { grid-template-columns: 1fr; } }

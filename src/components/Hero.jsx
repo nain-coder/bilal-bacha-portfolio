@@ -8,7 +8,10 @@ export default function Hero() {
       <span className="hero__glow hero__glow--a" />
       <span className="hero__glow hero__glow--b" />
       <div>
-        <p className="badge rise"><span className="badge__dot" />{availability}</p>
+        <p className="badge rise">
+          <span className="badge__dot" />
+          {availability}
+        </p>
         <h1 className="hero__name" aria-label={profile.name}>
           {profile.name.split(" ").map((w, i) => (
             <span key={w} className="hero__word" aria-hidden="true">
@@ -18,12 +21,31 @@ export default function Hero() {
         </h1>
         <p className="hero__summary rise rise--late">{profile.summary}</p>
         <div className="hero__actions rise rise--late">
-          <a className="btn btn--primary" href={profile.cv} download>Download CV</a>
-          <a className="btn" href={`mailto:${profile.email}`}>Email me</a>
-          <a className="btn" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+        
+          <a
+            className="btn btn--primary"
+            href="https://github.com/MuhammadBilalBacha"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <a className="btn" href={`mailto:${profile.email}`}>
+            Email me
+          </a>
+          <a
+            className="btn"
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
         <ul className="hero__facts rise rise--late">
-          {facts.map((f) => <li key={f}>{f}</li>)}
+          {facts.map((f) => (
+            <li key={f}>{f}</li>
+          ))}
         </ul>
       </div>
       <CodeCard />
